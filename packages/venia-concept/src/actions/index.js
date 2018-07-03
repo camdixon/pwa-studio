@@ -7,7 +7,8 @@ let imagesBySku = storage.getItem('imagesBySku') || {};
 
 export function makeNewCart() {
     return M2Rest.createGuestCart().then(cartId => {
-        return storage.setItem('cartId', cartId, 86400).then(() => cartId);
+        storage.setItem('cartId', cartId, 86400);
+        return cartId;
     });
 }
 
