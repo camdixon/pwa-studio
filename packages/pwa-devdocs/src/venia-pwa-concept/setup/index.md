@@ -75,7 +75,9 @@ If you clone the PWA Studio project repo into the `magento2ce` directory of the 
 ## Install PWA Studio dependencies
 
 In the PWA Studio project's root directory, run the following command to install the project dependencies:
-
+``` sh
+cd pwa-studio
+```
 ``` sh
 npm install
 ```
@@ -90,7 +92,7 @@ ln -s /Users/magedev/pwa-studio/packages/pwa-module Pwa
 ```
 Or from your Magento 2 root
 ``` sh
-ln -s pwa-studio/packages/pwa-module app/code/Magento/Pwa
+ln -s ../../../pwa-studio/packages/pwa-module app/code/Magento/Pwa
 ```
 
 ### Enable and install
@@ -122,7 +124,7 @@ You can find this configuration using the **Configuration** link in the **Conten
 
 ## Set environment variables
 
-Under the Venia project's `theme-frontend-venia` directory, copy `.env.dist` into a new `.env` file and update the variables with the URL to your Magento development store.
+Under the Venia project's `theme-frontend-venia` directory, copy `.env.dist` into a new `.env` file and update the `MAGENTO_BACKEND_DOMAIN` variable with the URL to your Magento development store.
 
 **Example commands:**
 ``` sh
