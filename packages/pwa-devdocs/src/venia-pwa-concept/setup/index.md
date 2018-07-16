@@ -90,7 +90,7 @@ ln -s /Users/magedev/pwa-studio/packages/pwa-module Pwa
 ```
 Or from your Magento 2 root
 ``` sh
-ln -s pwa-studio/packages/pwa-module app/code/Magento/Pwa
+ln -s ../../../pwa-studio/packages/pwa-module app/code/Magento/Pwa
 ```
 
 ### Enable and install
